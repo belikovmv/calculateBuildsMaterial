@@ -1,9 +1,9 @@
 import {
     Link,
 } from "react-router-dom";
-import gratis from "../img/gratis.png";
-import blue from "../img/blue.png";
-import '../App.css';
+import gratis from "../../img/gratis.png";
+import blue from "../../img/blue.png";
+import './App.css';
 
 function Main() {
     return (

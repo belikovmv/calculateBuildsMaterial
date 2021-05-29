@@ -1,25 +1,25 @@
 import {
-    Route,
-    Switch,
-    Redirect
+	Route,
+	Switch,
+	Redirect
 } from "react-router-dom";
-import Main from "./layout/Main";
-import Calc from "./layout/Calc";
+import Main from "./layout/Main/Main";
+import Calc from "./layout/Calc/Calc";
 
 function App() {
-    return (
-        <>
-            <Switch>
-                <Route path="/main">
-                    <Main/>
-                </Route>
-                <Route path="/calc">
-                    <Calc/>
-                </Route>
-            </Switch>
-            <Redirect from='/' to='main'/>
-        </>
-    );
+	return (
+		<>
+			<Switch>
+				<Route path="/main">
+					<Main/>
+				</Route>
+				<Route exact path="/calc">
+					<Calc/>
+				</Route>
+				<Redirect from='/' to='main'/>
+			</Switch>
+		</>
+	);
 }
 
 export default App;

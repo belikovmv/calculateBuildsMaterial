@@ -7,6 +7,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .app-button {
@@ -29,12 +30,16 @@
 
 .app-img  {
     position: absolute;
-    bottom: 100px;
-    right: -150px;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height:  500px;
 }
 
 .app-img2  {
     position: absolute;
-    top: -100px;
-    left: -90px;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
 }
