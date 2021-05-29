@@ -12,7 +12,7 @@ function App() {
 				<Route path="/">
 					<Main/>
 				</Route>
-				<Route exact path="/calc">
+				<Route exact path="/calculateBuildsMaterial/calc">
 					<Calc/>
 				</Route>
 			</Switch>
