@@ -18,6 +18,14 @@ const Calc = () => {
 
 	const [midEnd, setMidEnd] = useState(0)
 	const [middle, setMiddle] = useState(false);
+	const [midCalc, setMidCalc] = useState({
+		allLength: '',
+		floors: '',
+		floorHeight: '',
+		width: '',
+		partLength: '',
+		partWidth: '',
+	})
 
 	const [bot, setBot] = useState(false);
 	const [botCalc, setBotCalc] = useState({
@@ -64,6 +72,17 @@ const Calc = () => {
 		}
 	}
 
+	const endSumMid = () => {
+		const size = ((midCalc.allLength * midCalc.floorHeight * midCalc.width) * midCalc.floors) + ((midCalc.partLength * midCalc.partWidth + midCalc.floorHeight) * midCalc.floors);
+		return size * 200
+	}
+	const handleChangeMid = (e, trigger) => {
+		setMidCalc((prevCalc) => ({
+			...prevCalc,
+			[trigger]: e.target.value
+		}))
+	}
+
 	const endSumBot = () => {
 		const size = ((botCalc.size.height * botCalc.size.length) - ((botCalc.size.height - botCalc.size.depth) * (botCalc.size.length - botCalc.size.depth))) * botCalc.size.height;
 		return size * (botCalc.mark === 'M100' ? 2450 : 'M150' ? 2600 : 'M200' ? 2800 : 3050);
@@ -92,6 +111,9 @@ const Calc = () => {
 
 			const endBotSum = endSumBot();
 			setBotEnd(endBotSum)
+
+			const endBotMid = endSumMid()
+			setMidEnd(endBotMid)
 		}
 		setShowResult(!showResult)
 	}
@@ -134,13 +156,13 @@ const Calc = () => {
 			<div className='middle-content'>
 				{showResult ? <div className='rows'>
 						<div>
-							{topEnd}
+							{topEnd} р.
 						</div>
 						<div>
-							0
+							{midEnd} р.
 						</div>
 						<div>
-							{botEnd}
+							{botEnd} р.
 						</div>
 					</div>
 					: <div className='rows'>
@@ -208,45 +230,62 @@ const Calc = () => {
 
 						<div style={middle ? {opacity: 1} : {opacity: .2}} className='row2'>
 							<div className='input-type'>
-								Размер блока:
-								<input placeholder='Высота, мм' type="text"/>
-								<input placeholder='Ширина, мм' type="text"/>
-								<input placeholder='Длинна, мм' type="text"/>
+								Общая длина всех стен:
+								<input
+									disabled={!middle} onChange={(e) => handleChangeMid(e, 'allLength')}
+									placeholder='Пе
+									риметр, м'
+									type="text"/>
 							</div>
 
 							<div className='input-type'>
-								Общая длина всех стен:
-								<input placeholder='Периметр, м' type="text"/>
+								Количество этажей
+								<input
+									disabled={!middle}
+									onChange={(e) => handleChangeMid(e, 'floors')}
+									placeholder='м'
+									type="text"
+								/>
 							</div>
 
-							<div className='select-type'>
+							<div className='input-type'>
+								Высота одного этажа
+								<input
+									disabled={!middle}
+									onChange={(e) => handleChangeMid(e, 'floorHeight')}
+									placeholder='м'
+									type="text"
+								/>
+							</div>
+
+							<div className='input-type'>
 								Толщина стен:
-								<select name="">
-									<option value="" selected="selected">Половина блока</option>
-									<option value="">В 1 блок</option>
-									<option value="">В 1.5 блока</option>
-									<option value="">В 2</option>
-								</select>
+								<input
+									disabled={!middle}
+									onChange={(e) => handleChangeMid(e, 'width')}
+									placeholder='м'
+									type="text"
+								/>
 							</div>
 
-							<div className='select-type'>
-								Толщина раствора в кладке, мм:
-								<select name="">
-									<option value="" selected="selected">Раствор 10</option>
-									<option value="">Раствор 15</option>
-									<option value="">Раствор 20</option>
-									<option value="">Клей 2</option>
-								</select>
+							<div className='input-type'>
+								Длинна перегородок
+								<input
+									disabled={!middle}
+									onChange={(e) => handleChangeMid(e, 'partLength')}
+									placeholder='м'
+									type="text"
+								/>
 							</div>
 
-							<div className='select-type'>
-								Кладочная сетка:
-								<select name="">
-									<option value="" selected="selected">Каждый ряд</option>
-									<option value="">Через ряд</option>
-									<option value="">Через 2 ряда</option>
-									<option value="">Через 3 ряда</option>
-								</select>
+							<div className='input-type'>
+								Толщина перегородок
+								<input
+									disabled={!middle}
+									onChange={(e) => handleChangeMid(e, 'partWidth')}
+									placeholder='м'
+									type="text"
+								/>
 							</div>
 						</div>
 
