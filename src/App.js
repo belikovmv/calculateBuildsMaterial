@@ -7,16 +7,14 @@ import Calc from "./layout/Calc/Calc";
 
 function App() {
 	return (
-		<>
 			<Switch>
-				<Route path="/">
+				<Route exact path="/">
 					<Main/>
 				</Route>
 				<Route exact path="/calc">
 					<Calc/>
 				</Route>
 			</Switch>
-		</>
 	);
 }
 
