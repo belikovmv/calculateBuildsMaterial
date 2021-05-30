@@ -9,7 +9,7 @@ import {
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
+        <Router basename="/calculateBuildsMaterial">
             <App/>
         </Router>
     </React.StrictMode>,
