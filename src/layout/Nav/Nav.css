@@ -1,0 +1,25 @@
+.nav-wrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: #333;
+}
+
+.nav-content {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-wrapper .nav-wrapper-link {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.nav-wrapper .nav-wrapper-link-active {
+    color: #cf2c2f;
+}
