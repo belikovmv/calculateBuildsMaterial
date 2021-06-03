@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/calculateBuildsMaterial/static/css/main.c407f550.chunk.css",
-    "main.js": "/calculateBuildsMaterial/static/js/main.8845021f.chunk.js",
-    "main.js.map": "/calculateBuildsMaterial/static/js/main.8845021f.chunk.js.map",
-    "runtime-main.js": "/calculateBuildsMaterial/static/js/runtime-main.42513b8e.js",
-    "runtime-main.js.map": "/calculateBuildsMaterial/static/js/runtime-main.42513b8e.js.map",
-    "static/js/2.a9b3dfcb.chunk.js": "/calculateBuildsMaterial/static/js/2.a9b3dfcb.chunk.js",
-    "static/js/2.a9b3dfcb.chunk.js.map": "/calculateBuildsMaterial/static/js/2.a9b3dfcb.chunk.js.map",
-    "static/js/3.523594d7.chunk.js": "/calculateBuildsMaterial/static/js/3.523594d7.chunk.js",
-    "static/js/3.523594d7.chunk.js.map": "/calculateBuildsMaterial/static/js/3.523594d7.chunk.js.map",
+    "main.css": "/calculateBuildsMaterial/static/css/main.4739d64a.chunk.css",
+    "main.js": "/calculateBuildsMaterial/static/js/main.9caaa382.chunk.js",
+    "main.js.map": "/calculateBuildsMaterial/static/js/main.9caaa382.chunk.js.map",
+    "runtime-main.js": "/calculateBuildsMaterial/static/js/runtime-main.becaa7c0.js",
+    "runtime-main.js.map": "/calculateBuildsMaterial/static/js/runtime-main.becaa7c0.js.map",
+    "static/js/2.95482b7c.chunk.js": "/calculateBuildsMaterial/static/js/2.95482b7c.chunk.js",
+    "static/js/2.95482b7c.chunk.js.map": "/calculateBuildsMaterial/static/js/2.95482b7c.chunk.js.map",
+    "static/js/3.2381ec14.chunk.js": "/calculateBuildsMaterial/static/js/3.2381ec14.chunk.js",
+    "static/js/3.2381ec14.chunk.js.map": "/calculateBuildsMaterial/static/js/3.2381ec14.chunk.js.map",
     "index.html": "/calculateBuildsMaterial/index.html",
-    "static/css/main.c407f550.chunk.css.map": "/calculateBuildsMaterial/static/css/main.c407f550.chunk.css.map",
-    "static/js/2.a9b3dfcb.chunk.js.LICENSE.txt": "/calculateBuildsMaterial/static/js/2.a9b3dfcb.chunk.js.LICENSE.txt",
-    "static/media/blue.6e9b555a.png": "/calculateBuildsMaterial/static/media/blue.6e9b555a.png",
-    "static/media/gratis.5719b727.png": "/calculateBuildsMaterial/static/media/gratis.5719b727.png",
-    "static/media/success.77700468.png": "/calculateBuildsMaterial/static/media/success.77700468.png"
+    "static/css/main.4739d64a.chunk.css.map": "/calculateBuildsMaterial/static/css/main.4739d64a.chunk.css.map",
+    "static/js/2.95482b7c.chunk.js.LICENSE.txt": "/calculateBuildsMaterial/static/js/2.95482b7c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.42513b8e.js",
-    "static/js/2.a9b3dfcb.chunk.js",
-    "static/css/main.c407f550.chunk.css",
-    "static/js/main.8845021f.chunk.js"
+    "static/js/runtime-main.becaa7c0.js",
+    "static/js/2.95482b7c.chunk.js",
+    "static/css/main.4739d64a.chunk.css",
+    "static/js/main.9caaa382.chunk.js"
   ]
 }
