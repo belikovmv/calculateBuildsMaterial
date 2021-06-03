@@ -1,6 +1,6 @@
 # calculateBuildsMaterial
 
-## [demo](https://pavelbutkodev.github.io/calculateBuildsMaterial/#/main)
+### [demo](https://pavelbutkodev.github.io/calculateBuildsMaterial/#/main)
     
 ### Super Easy Install
 ```
